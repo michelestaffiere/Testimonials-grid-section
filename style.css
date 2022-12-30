@@ -1,0 +1,55 @@
+/* +++++++++++++++ */
+/* General Styling */
+/* +++++++++++++++ */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+h1,h2,h3,p,a{
+    font-family: Poppins;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+section{
+    width: 85%;
+}
+/* +++++++++++++++ */
+/*  Review Styling */
+/* +++++++++++++++ */
+#grid-container{
+    margin: 0  auto;
+    border: purple solid 5px;
+    display: grid;
+    grid-template-columns: minmax(6.25rem, auto) minmax(6.25rem, auto)minmax(6.25rem, auto);
+    gap:3rem;
+  
+}
+#picture{
+    border-radius: 50px;
+}
+#one{
+    border: red solid 2px;
+    /* padding: 2%;
+    background-color: aqua;
+    border-radius: 10px;
+    max-height: auto;
+    max-width: auto; */
+    
+}
+#two{
+    border: blue solid 2px;
+}
+#three{
+    border: green solid 2px;
+}
+#four{
+    border: brown solid 2px;
+}
+#five{
+    border: black solid 2px;
+}
+
+
+/* Media quary to this for mobile devices */
+/* grid-template-columns: minmax(100px, auto); */
