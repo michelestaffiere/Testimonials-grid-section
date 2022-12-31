@@ -19,13 +19,11 @@ html {
 }
 body{
     min-height: 100%;
-    border: pink solid 5px;
     display: flex;
     justify-content: center;
     background-color: hsl(210, 46%, 95%);
 }
 section{
-    border: black solid 5px;
     max-width: 85%;
     margin: 0;
 }
@@ -33,31 +31,54 @@ section{
 /*  Review Styling */
 /* +++++++++++++++ */
 #grid-container{
-    border: purple solid 5px;
     display: grid;
-    grid-template-columns: minmax(6.25rem, auto) minmax(6.25rem, auto)minmax(6.25rem, auto);
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr;
     gap:3rem;
 }
 #grid-container div{
     border-radius: 15px;
+    padding:5%;
+    box-shadow: 6px 6px 5px 4px rgba(0,0,0,0.14);
+    transition: 1s;
 }
 #picture{
     border-radius: 50px;
 }
 #one{
     background-color: hsl(263, 55%, 52%);
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
 }
 #two{
     background-color: hsl(217, 19%, 35%);
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
 }
 #three{
     background-color: hsl(0, 0%, 100%);
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
 }
 #four{
     background-color: hsl(0, 0%, 100%);
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
 }
 #five{
    background-color: hsl(219, 29%, 14%);
+   grid-row-start: 2;
+   grid-column-start: 2;
+   grid-row-end: 3;
+   grid-column-end: 3;
 }
 
 
@@ -67,5 +88,10 @@ section{
 
 
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: black; 
+    margin: 0;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
