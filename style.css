@@ -27,9 +27,9 @@ section{
     max-width: 85%;
     margin: 0;
 }
-/* +++++++++++++++ */
-/*  Review Styling */
-/* +++++++++++++++ */
+/* ++++++++++++++++++++++ */
+/*  Review Grid Styling   */
+/* ++++++++++++++++++++++ */
 #grid-container{
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -48,45 +48,38 @@ section{
 #one{
     background-color: hsl(263, 55%, 52%);
     grid-row-start: 1;
-    grid-column-start: 1;
     grid-row-end: 2;
+    grid-column-start: 1;
     grid-column-end: 2;
 }
 #two{
     background-color: hsl(217, 19%, 35%);
     grid-row-start: 1;
-    grid-column-start: 2;
     grid-row-end: 2;
+    grid-column-start: 2;
     grid-column-end: 3;
 }
 #three{
     background-color: hsl(0, 0%, 100%);
     grid-row-start: 1;
-    grid-column-start: 3;
     grid-row-end: 3;
+    grid-column-start: 3;
     grid-column-end: 4;
 }
 #four{
     background-color: hsl(0, 0%, 100%);
     grid-row-start: 2;
-    grid-column-start: 1;
     grid-row-end: 3;
+    grid-column-start: 1;
     grid-column-end: 2;
 }
 #five{
    background-color: hsl(219, 29%, 14%);
    grid-row-start: 2;
-   grid-column-start: 2;
    grid-row-end: 3;
+   grid-column-start: 2;
    grid-column-end: 3;
 }
-
-
-/* Media quary to this for mobile devices */
-/* grid-template-columns: minmax(100px, auto); */
-
-
-
 
 .attribution { 
     font-size: 11px; 
@@ -94,4 +87,13 @@ section{
     color: black; 
     margin: 0;
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { 
+    color:
+    hsl(228, 45%, 44%); 
+}
+/* Media quary to this for mobile devices */
+/* grid-template-columns: minmax(100px, auto); */
+
+
+
+
