@@ -1,16 +1,21 @@
 /* +++++++++++++++ */
 /* General Styling */
 /* +++++++++++++++ */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-html { box-sizing: border-box; }
-*, *:before, *:after { box-sizing: inherit; }
-h1,h2,h3,p,a{
+
+html {
+    height: 100%;
+    box-sizing: border-box;
     font-family: Poppins;
     color:hsl(210, 46%, 95%);
 }
-html{
-    height: 100%;
+*, *:before, *:after { 
+    box-sizing: inherit;
+    margin: 0; 
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 body{
     min-height: 100%;
@@ -20,50 +25,47 @@ body{
     background-color: hsl(210, 46%, 95%);
 }
 section{
+    border: black solid 5px;
     max-width: 85%;
+    margin: 0;
 }
 /* +++++++++++++++ */
 /*  Review Styling */
 /* +++++++++++++++ */
 #grid-container{
-    margin: 0  auto;
     border: purple solid 5px;
     display: grid;
     grid-template-columns: minmax(6.25rem, auto) minmax(6.25rem, auto)minmax(6.25rem, auto);
     gap:3rem;
-  
+}
+#grid-container div{
+    border-radius: 15px;
 }
 #picture{
     border-radius: 50px;
 }
 #one{
-    border: red solid 2px;
     background-color: hsl(263, 55%, 52%);
-    /* padding: 2%;
-    background-color: aqua;
-    border-radius: 10px;
-    max-height: auto;
-    max-width: auto; */
-    
 }
 #two{
-    border: blue solid 2px;
     background-color: hsl(217, 19%, 35%);
 }
 #three{
-    border: green solid 2px;
     background-color: hsl(0, 0%, 100%);
-  
 }
 #four{
-    border: brown solid 2px;
     background-color: hsl(0, 0%, 100%);
 }
 #five{
-    border: black solid 2px;
    background-color: hsl(219, 29%, 14%);
 }
 
 
 /* Media quary to this for mobile devices */
 /* grid-template-columns: minmax(100px, auto); */
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
