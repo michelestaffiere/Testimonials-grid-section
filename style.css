@@ -32,9 +32,10 @@ section{
 /* ++++++++++++++++++++++ */
 #grid-container{
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns:  1fr 1fr 1fr;
     gap:3rem;
+
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns:  repeat(4,minmax(auto,1fr));
 }
 #grid-container div{
     border-radius: 15px;
@@ -47,38 +48,21 @@ section{
 }
 #one{
     background-color: hsl(263, 55%, 52%);
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column: span 2;
 }
 #two{
     background-color: hsl(217, 19%, 35%);
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
 }
 #three{
     background-color: hsl(0, 0%, 100%);
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-row: span 2;
 }
 #four{
     background-color: hsl(0, 0%, 100%);
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
 }
 #five{
    background-color: hsl(219, 29%, 14%);
-   grid-row-start: 2;
-   grid-row-end: 3;
-   grid-column-start: 2;
-   grid-column-end: 3;
+   grid-column: span 2;
 }
 
 .attribution { 
@@ -91,9 +75,33 @@ section{
     color:
     hsl(228, 45%, 44%); 
 }
-/* Media quary to this for mobile devices */
-/* grid-template-columns: minmax(100px, auto); */
 
 
 
-
+/* Mobile layout design */
+@media(max-width:1000px){
+    #grid-container{
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+}
+#one{
+    background-color: hsl(263, 55%, 52%);
+    grid-column: span 2;
+}
+#two{
+    background-color: hsl(217, 19%, 35%);
+    grid-column: span 2;
+}
+#three{
+    background-color: hsl(0, 0%, 100%);
+    grid-column: span 2;
+}
+#four{
+    background-color: hsl(0, 0%, 100%);
+    grid-column: span 2;
+}
+#five{
+   background-color: hsl(219, 29%, 14%);
+   grid-column: span 2;
+}
+}
