@@ -39,12 +39,12 @@ section{
 }
 #grid-container div{
     border-radius: 15px;
-    padding:5%;
+    padding:3rem;
     box-shadow: 6px 6px 5px 4px rgba(0,0,0,0.14);
-    transition: 1s;
 }
 #picture{
     border-radius: 50px;
+    position: absolute;
 }
 #one{
     background-color: hsl(263, 55%, 52%);
@@ -56,13 +56,25 @@ section{
 #three{
     background-color: hsl(0, 0%, 100%);
     grid-row: span 2;
+    color: hsl(217, 19%, 35%);
 }
 #four{
     background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
 }
 #five{
    background-color: hsl(219, 29%, 14%);
    grid-column: span 2;
+   
+}
+.gradname{
+    padding-left: 5rem;
+}
+#grid-container div h2{
+    padding-top: 2rem;
+}
+.review{
+    padding-top: 1.5rem;
 }
 
 .attribution { 
@@ -79,29 +91,39 @@ section{
 
 
 /* Mobile layout design */
-@media(max-width:1000px){
-    #grid-container{
+@media(max-width:1133px){
+.parent{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+#grid-container{
     grid-template-columns:1fr;
     grid-template-rows: 1fr;
 }
 #one{
     background-color: hsl(263, 55%, 52%);
     grid-column: span 2;
+    position: relative;
 }
 #two{
     background-color: hsl(217, 19%, 35%);
     grid-column: span 2;
+    position: relative;
 }
 #three{
     background-color: hsl(0, 0%, 100%);
     grid-column: span 2;
+    grid-row-start: 5;
+    position: relative;
 }
 #four{
     background-color: hsl(0, 0%, 100%);
     grid-column: span 2;
+    position: relative;
 }
 #five{
    background-color: hsl(219, 29%, 14%);
    grid-column: span 2;
+   position: relative;
 }
 }
