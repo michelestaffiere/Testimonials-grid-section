@@ -42,7 +42,7 @@ section{
     padding:3rem;
     box-shadow: 6px 6px 5px 4px rgba(0,0,0,0.14);
 }
-#picture{
+.picture{
     border-radius: 50px;
     position: absolute;
 }
@@ -59,13 +59,13 @@ section{
     z-index: 1;
     position:relative;
 }
-#one #picture{
+#one .picture{
     border: .25rem solid hsla(263, 56%, 66%, 0.922);
 }
 #two{
     background-color: hsl(217, 19%, 35%);
 }
-#two #picture{
+#two .picture{
     border: .25rem solid hsl(217, 19%, 51%);
 }
 #three{
@@ -81,7 +81,7 @@ section{
    background-color: hsl(219, 29%, 14%);
    grid-column: span 2;
 }
-#five #picture{
+#five .picture{
     border: .25rem solid hsla(263, 56%, 66%, 0.922);
 }
 .gradname{
@@ -122,7 +122,7 @@ section{
     grid-column: span 2;
     position: relative;
 }
-#extra{
+#svgquote{
     top: 7%;
 }
 #two{
@@ -148,7 +148,7 @@ section{
 }
 }
 @media(max-width:505px){
-    #extra{
+    #svgquote{
         left: 45%;
         top: 3.5%;
     }
