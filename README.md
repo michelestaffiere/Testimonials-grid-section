@@ -2,8 +2,8 @@
 
 Below you will find my solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)
 ### Links
-- Solution URL: https://www.frontendmentor.io/solutions/testimonials-grid-section-_TaAo-3yKT
-- Live Site URL: https://testimonials-grid-section-weld-ten.vercel.app/
+- [Solution URL](https://www.frontendmentor.io/solutions/testimonials-grid-section-_TaAo-3yKT)
+- [Live Site URL](https://testimonials-grid-section-weld-ten.vercel.app/)
 
 ### Built with
 - Semantic HTML5 markup
