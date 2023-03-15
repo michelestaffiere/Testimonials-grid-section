@@ -1,14 +1,6 @@
 # My Solution to Front End Mentors Testimonials grid section
 
 Below you will find my solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)
-
-## Table of contents
-- [Built with](#built-with)
-- [Continued development](#continued-development)
-- [Useful resources](#useful-resources)
-- [Author](#author)
-
-
 ### Links
 - Solution URL: https://www.frontendmentor.io/solutions/testimonials-grid-section-_TaAo-3yKT
 - Live Site URL: https://testimonials-grid-section-weld-ten.vercel.app/
